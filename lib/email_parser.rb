@@ -15,5 +15,4 @@ class EmailParser
     newArray.reject! {|email| element.empty?}
     newArray
     end
-  end
 end
