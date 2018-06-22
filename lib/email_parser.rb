@@ -5,9 +5,9 @@
 class EmailParser
 
   attr_accessor :email
-
-  def initialized(email)
-    @email = email
+  
+  def initialized(emails)
+    @email = emails
   end
 
   def parse
@@ -15,4 +15,5 @@ class EmailParser
     newArray.reject! {|email| email.empty?}
     newArray
   end
+  
 end
