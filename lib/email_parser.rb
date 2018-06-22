@@ -12,7 +12,7 @@ class EmailParser
     @emails.split(",")
     @emails.split(" ")
     @emails.uniq!
-    @emails .each do |email|
+    @emails.each do |email|
       puts email
     end
   end
