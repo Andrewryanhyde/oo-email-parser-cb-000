@@ -9,8 +9,9 @@ class EmailParser
   end
 
   def self.parse
-    @emails.split(", ")
-    binding.pry
+    @emails.split(",")
+    @emails.split(" ")
+    @emails.uniq!
     @emails .each do |email|
       puts email
     end
